@@ -1,0 +1,142 @@
+/* Main SCSS File */
+
+//You could customize your bulma style and variables inside bulma.scss
+@import "bulma";
+
+//
+
+// EXAMPLE HOT TO INCLUDE IMAGES IN CSS
+// body {
+//     background-image: url('../img/test.svg');
+//     height: 100vh;
+// }
+
+:root {
+  --black: #323232;
+  --yellow: #fceb2d;
+  --grey: #807f78;
+  --red: #fc4732;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  overflow: auto;
+  background-color: var(--yellow);
+}
+
+#synt {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.syntName {
+  color: var(--black);
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  font-size: 46px !important;
+}
+.controllerBox {
+  flex-wrap: wrap;
+  padding-bottom: 180px;
+}
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.regulator {
+  display: block;
+  width: 40%;
+  position: relative;
+  &:before {
+    padding-top: 100%;
+    content: "";
+    display: block;
+    background-color: var(--black);
+    border-radius: 100%;
+  }
+}
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  right: 7.5%;
+  justify-content: flex-end;
+  width: 20%;
+  margin-left: auto;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 10px;
+  
+  .btn {
+    position: relative;
+    width: 100%;
+    &:before {
+      padding-top: 100%;
+      content: "";
+      display: block;
+      background-color: var(--black);
+    }
+    .actionName {
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.miniControlls {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.miniControllsButton {
+  display: block;
+  background-color: var(--black);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.red {
+    background-color: var(--red);
+  }
+}
+
+@media (max-width: 768px) {
+  // .controller {
+  //   width: 25%;
+  // }
+}
