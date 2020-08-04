@@ -127,7 +127,7 @@
         },
         {
           icon: `<i class="lnr lnr-clock"></i>`,
-          title: 'Working Hourse',
+          title: 'Working Hours',
           value: '5,021'
         },
         {
