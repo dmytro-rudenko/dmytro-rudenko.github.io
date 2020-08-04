@@ -507,7 +507,15 @@ input[type=submit]:focus {
     background-size: cover
 }
 
-@media (max-width: 768px) {
+.mobile-divider {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .mobile-divider {
+        display: block;
+        width: 100%;
+    }
     .animated-section {
         padding: 60px 15px;
     }
