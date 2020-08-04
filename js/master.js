@@ -16,6 +16,10 @@
     return new Handlebars.SafeString(`<img src="${src}" alt="${alt}">`);
   });
 
+  Handlebars.registerHelper('percent', function(amount) {
+    return new Handlebars.SafeString(`<div class="skill-percentage" style="width: ${amount}% !important;"></div>`);
+  })
+
   const flToken = '8c1a3053268c14272647341c032a4b103c02476a';
 
   $.ajax({
@@ -46,11 +50,11 @@
       linkedin: "https://www.linkedin.com/in/dmitry--rudenko/",
       telegram: "https://t.me/frog_ocean",
       freelancehunt: "https://freelancehunt.com/freelancer/dmitrijrudenko.html?r=mjXZO",
-      instagram: "https://www.instagram.com/rudenkodmitrij/"
+      github: "https://github.com/dmitrij-rudenko",
     },
     socialIcons: {
       linkedin: `<i class="fab fa-linkedin-in"></i>`,
-      instagram: `<i class="fab fa-instagram"></i>`,
+      github: `<i class="fab fa-github" aria-hidden="true"></i>`,
       telegram: `<i class="fab fa-telegram"></i>`
     },
     email: 'ph.dmitry.rudenko@gmail.com',
@@ -115,7 +119,7 @@
         author: 'Dima PC',
         review: `Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.`
       }],
-      factsTitle: 'Fun <span>Facts</span>',
+      factsTitle: 'Fun <span>Facts</span> About <span>Me</span>',
       facts: [{
           icon: `<i class="lnr lnr-heart"></i>`,
           title: 'Happy Clients',
@@ -127,7 +131,7 @@
           value: '5,021'
         },
         {
-          icon: `<i class="lnr lnr-star"></i>`,
+          icon: `<i class="fas fa-coffee"></i>`,
           title: 'Coffies drink',
           value: '600'
         }
@@ -136,8 +140,7 @@
     resume: {
       title: 'Resume',
       experience: 'Experience',
-      works: [
-        {
+      works: [{
           period: '2020 - Now',
           company: 'Mediacast',
           title: 'Middle Javascript Developer',
@@ -155,7 +158,48 @@
           title: 'Wordpress Developer',
           desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
         }
+      ],
+      skillsTitle: 'Coding <span>Skills</span>',
+      skills: [{
+        name: 'HTML/CSS/SCSS',
+        percents: '100'
+      }, {
+        name: 'Javascript/ES6',
+        percents: '90'
+      },
+      {
+        name: 'Wordpress/PHP',
+        percents: '85'
+      },
+      {
+        name: 'MongoDB/Node.js',
+        percents: '90'
+      },
+      {
+        name: "Ubuntu",
+        percents: "77"
+      }
+      ],
+      techTitle: 'Technologies',
+      technologies: [
+        'Express.js',
+        'Vue.js',
+        'WooCommerce',
+        'Mongoose',
+        'Webpack',
+        'SSH',
+        'Git',
+        'Bash',
+        'Bulma',
+        'Bootstrap',
+        'Nuxt.js'
       ]
+    },
+    contacts: {
+      title: 'Contacts',
+      email: 'E-mail',
+      telegram: 'telegram',
+      my_freelancehunt_page: 'My freelancehunt page'
     }
   };
 

@@ -83,12 +83,12 @@
                   <span class="link-text">{{menu.resume}}</span>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#portfolio" class="nav-anim">
                   <span class="menu-icon lnr lnr-briefcase"></span>
                   <span class="link-text">{{menu.portfolio}}</span>
                 </a>
-              </li>
+              </li> -->
               <!-- <li>
                 <a href="#blog" class="nav-anim">
                   <span class="menu-icon lnr lnr-book"></span>
@@ -106,7 +106,7 @@
             <div class="social-links">
               <ul>
                 <li>{{{blankLink socialIcons.linkedin contactLinks.linkedin}}}</li>
-                <li>{{{blankLink socialIcons.instagram contactLinks.instagram}}}</li>
+                <li>{{{blankLink socialIcons.github contactLinks.github}}}</li>
                 <li>{{{blankLink socialIcons.telegram contactLinks.telegram}}}</li>
               </ul>
             </div>
@@ -190,7 +190,7 @@
                   <div class="white-space-50"></div>
 
                   <!-- Services -->
-                  <div class="row">
+<!--                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="block-title">
                         <h3>{{{about.skillsTitle}}}</h3>
@@ -215,9 +215,9 @@
                           {{/each}}
                         </div>
                       </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-xs-12 col-sm-6">
+<!--                     <div class="col-xs-12 col-sm-6">
                       <div class="col-inner">
                         <div class="info-list-w-icon">
                           {{#each about.skills.right}}
@@ -234,13 +234,13 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- End of Services -->
 
-                  <div class="white-space-30"></div>
-
+<!--                   <div class="white-space-30"></div>
+ -->
                   <!-- Testimonials -->
-                  <div class="row">
+<!--                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="block-title">
                         <h3>{{reviewsTitle}}</h3>
@@ -271,10 +271,10 @@
                         {{/each}}
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- End of Testimonials -->
 
-                  <div class="white-space-50"></div>
+<!--                   <div class="white-space-50"></div> -->
 
                   <!-- Fun Facts -->
                   <div class="row">
@@ -342,59 +342,19 @@
                     <div class="col-xs-12 col-sm-5">
                       <!-- Coding Skills -->
                       <div class="block-title">
-                        <h3>Coding <span>Skills</span></h3>
+                        <h3>{{{resume.skillsTitle}}}</h3>
                       </div>
 
                       <div class="skills-info skills-second-style">
-                        <!-- Skill 5 -->
+                        {{#each resume.skills}}
                         <div class="skill clearfix">
-                          <h4>JavaScript</h4>
-                          <div class="skill-value">95%</div>
+                          <h4>{{this.name}}</h4>
+                          <div class="skill-value">{{this.percents}}%</div>
                         </div>
                         <div class="skill-container skill-5">
-                          <div class="skill-percentage"></div>
+                          {{{percent this.percents}}}
                         </div>
-                        <!-- End of Skill 5 -->
-
-                        <!-- Skill 6 -->
-                        <div class="skill clearfix">
-                          <h4>PHP</h4>
-                          <div class="skill-value">85%</div>
-                        </div>
-                        <div class="skill-container skill-6">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 6 -->
-                        
-                        <!-- Skill 7 -->
-                        <div class="skill clearfix">
-                          <h4>HTML/CSS</h4>
-                          <div class="skill-value">100%</div>
-                        </div>
-                        <div class="skill-container skill-7">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 7 -->
-                        
-                        <!-- Skill 8 -->
-                        <div class="skill clearfix">
-                          <h4>Smarty/Twig</h4>
-                          <div class="skill-value">75%</div>
-                        </div>
-                        <div class="skill-container skill-8">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 8 -->
-
-                        <!-- Skill 9 -->
-                        <div class="skill clearfix">
-                          <h4>Perl</h4>
-                          <div class="skill-value">90%</div>
-                        </div>
-                        <div class="skill-container skill-9">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 9 -->
+                        {{/each}}
                       </div>
                       <!-- End of Coding Skills -->
 
@@ -402,19 +362,13 @@
 
                       <!-- Knowledges -->
                       <div class="block-title">
-                        <h3>Knowledges</h3>
+                        <h3>{{resume.techTitle}}</h3>
                       </div>
 
                       <ul class="knowledges">
-                        <li>Marketing</li>
-                        <li>Print</li>
-                        <li>Digital Design</li>
-                        <li>Social Media</li>
-                        <li>Time Management</li>
-                        <li>Communication</li>
-                        <li>Problem-Solving</li>
-                        <li>Social Networking</li>
-                        <li>Flexibility</li>
+                        {{#each resume.technologies}}
+                        <li>{{this}}</li>
+                        {{/each}}
                       </ul>
                       <!-- End of Knowledges -->
                     </div>
@@ -426,7 +380,7 @@
               <!-- End of Resume Subpage -->
 
               <!-- Portfolio Subpage -->
-              <section data-id="portfolio" class="animated-section">
+              <!-- <section data-id="portfolio" class="animated-section">
                 <div class="page-title">
                   <h2>Portfolio</h2>
                 </div>
@@ -435,7 +389,6 @@
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                      <!-- Portfolio Content -->
                       <div class="portfolio-content">
 
                         <ul class="portfolio-filters">
@@ -459,7 +412,6 @@
                           </li>
                         </ul>
 
-                        <!-- Portfolio Grid -->
                         <div class="portfolio-grid three-columns">
                           
                           <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
@@ -529,30 +481,28 @@
                           </figure>
                         </div>
                       </div>
-                      <!-- End of Portfolio Content -->
                     </div>
                   </div>
                 </div>
-              </section>
-              <!-- End of Portfolio Subpage -->
+              </section> -->
               <!-- Contact Subpage -->
               <section data-id="contact" class="animated-section">
                 <div class="page-title">
-                  <h2>Contact</h2>
+                  <h2>{{contacts.title}}</h2>
                 </div>
 
                 <div class="section-content">
                   <p>
-                    <span>E-mail:</span> <br>
+                    <span>{{contacts.email}}:</span> <br>
                     <a href="mailto:ph.dmitry.rudenko@gmail.com">ph.dmitry.rudenko@gmail.com</a>
                   </p>
                   <p>
-                    <span>Telegram:</span> <br>
+                    <span>{{contacts.telegram}}:</span> <br>
                     <a target="_blank" href="https://t.me/frog_ocean">@frog_ocean</a>
                   </p>
                   <p>
                     <span>Freelancehunt:</span> <br>
-                    <a target="_blank" href="https://freelancehunt.com/freelancer/dmitrijrudenko.html?r=mjXZO">Моя страница на фрилансхант</a>
+                    <a target="_blank" href="https://freelancehunt.com/freelancer/dmitrijrudenko.html?r=mjXZO">{{contacts.my_freelancehunt_page}}</a>
                   </p>
                   <div class="row">
                     <!-- Contact Info -->
@@ -669,5 +619,7 @@
     <script src='js/owl.carousel.min.js'></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
+
+
   </body>
 </html>
