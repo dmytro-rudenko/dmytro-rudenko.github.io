@@ -10,12 +10,17 @@
     return new Handlebars.SafeString(`<a target='_blank' href='${url}'>${text}</a>`);
   });
 
+  Handlebars.registerHelper('img', function(src, alt) {
+    src = Handlebars.escapeExpression(src); //экранирование выражения
+    alt = Handlebars.escapeExpression(alt);
+    return new Handlebars.SafeString(`<img src="${src}" alt="${alt}">`);
+  });
+
   const flToken = '8c1a3053268c14272647341c032a4b103c02476a';
 
   $.ajax({
     url: "https://api.freelancehunt.com/v2/freelancers/dmitrijrudenko/reviews",
     method: "GET",
-    timeout: 0,
     headers: {
       "Authorization": `Bearer ${flToken}`
     },
@@ -103,7 +108,54 @@
             description: 'Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.'
           }
         ]
-      }
+      },
+      reviewsTitle: "Reviews",
+      reviews: [{
+        imageSource: 'img/testimonials/testimonial-1.jpg',
+        author: 'Dima PC',
+        review: `Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.`
+      }],
+      factsTitle: 'Fun <span>Facts</span>',
+      facts: [{
+          icon: `<i class="lnr lnr-heart"></i>`,
+          title: 'Happy Clients',
+          value: '51'
+        },
+        {
+          icon: `<i class="lnr lnr-clock"></i>`,
+          title: 'Working Hourse',
+          value: '5,021'
+        },
+        {
+          icon: `<i class="lnr lnr-star"></i>`,
+          title: 'Coffies drink',
+          value: '600'
+        }
+      ]
+    },
+    resume: {
+      title: 'Resume',
+      experience: 'Experience',
+      works: [
+        {
+          period: '2020 - Now',
+          company: 'Mediacast',
+          title: 'Middle Javascript Developer',
+          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+        },
+        {
+          period: '2019 - 2020',
+          company: 'Springbear Agency',
+          title: 'Team Lead',
+          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+        },
+        {
+          period: '2016 - 2019',
+          company: 'Exit Technologies',
+          title: 'Wordpress Developer',
+          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+        }
+      ]
     }
   };
 
