@@ -4,7 +4,7 @@
 First you clone this repository then you need to install the dependencies
 
 ```
-git clone https://github.com/Dmitry-Rudenko/courses.git
+git clone https://github.com/dmitrij-rudenko/courses.git
 cd courses
 npm install
 ```
