@@ -172,21 +172,17 @@ jQuery(document).ready(function($) {
     },
     mounted() {
       const that = this;
-      let currentKeys = [];
+      let currentKeys = {};
       document.addEventListener('keydown', function(event) {
         that.controllers.forEach(controller => {
           if (controller.plusKey.letter === event.key) {
-            currentKeys.push(controller.plusKey);
-            controller.event(currentKey.direction);
+            currentKeys[event.key] = controller.plusKey;
+            controller.event(currentKeys[event.key].direction);
           } else if (controller.minusKey.letter === event.key) {
-            currentKeys.push(controller.minusKey);
-            controller.event(currentKey.direction);
+            currentKeys[event.key] = controller.minusKey;
+            controller.event(currentKeys[event.key].direction);
           }
-          if (currentKeys.length > 0) {
-            currentKeys.forEach(currentKey => {
-              currentKey.active = true;
-            });
-          }
+          if (currentKeys[event.key]) currentKeys[event.key].active = true;
         });
         that.actions.forEach(action => {
           if (action.letter === event.key) {
@@ -196,11 +192,9 @@ jQuery(document).ready(function($) {
       });
 
       document.addEventListener('keyup', function(event) {
-        if (currentKeys.length > 0) {
-          currentKeys.forEach(currentKey => {
-            currentKey.active = true;
-          });
-          currentKeys = [];
+        console.log(currentKeys[event.key]);
+        if (currentKeys[event.key]) {
+          currentKeys[event.key].active = false;
         }
       });
     }
