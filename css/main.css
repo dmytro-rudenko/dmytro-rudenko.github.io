@@ -507,6 +507,12 @@ input[type=submit]:focus {
     background-size: cover
 }
 
+@media (max-width: 768px) {
+    .animated-section {
+        padding: 60px 15px;
+    }
+}
+
 .single-page-content {
     position: absolute;
     background-color: #222;

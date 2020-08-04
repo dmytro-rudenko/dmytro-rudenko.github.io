@@ -44,7 +44,7 @@
       about: "About me",
       resume: "Resume",
       portfolio: "Portfolio",
-      contacts: "contacts"
+      contacts: "Contacts"
     },
     contactLinks: {
       linkedin: "https://www.linkedin.com/in/dmitry--rudenko/",
