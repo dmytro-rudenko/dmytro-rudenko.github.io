@@ -144,19 +144,19 @@
           period: '2020 - Now',
           company: 'MediacastTV',
           title: 'Middle Javascript Developer',
-          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+          desc: ''
         },
         {
           period: '2019 - 2020',
           company: 'Springbear Agency',
           title: 'Team Lead',
-          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+          desc: ''
         },
         {
           period: '2016 - 2019',
           company: 'Exit Technologies',
           title: 'Wordpress Developer',
-          desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
+          desc: ''
         }
       ],
       skillsTitle: 'Coding <span>Skills</span>',
