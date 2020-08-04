@@ -67,8 +67,8 @@
     about: {
       title: 'About <span>me</span>',
       information: `I am a full stack developer. I have been programming for the last 5 years.
-      Over the years of practice, he managed to work with various programming languages and technologies.
-      There is a lot of experience in developing sites using CMS Wordpress and writing full-fledged web applications in node.js.
+      Over the years of practice, I managed to work with various programming languages and technologies.
+      I have big experience in developing sites using CMS Wordpress and writing full-fledged web applications in node.js.
       Always open to new interesting projects.
       `,
       fields: [{
@@ -142,7 +142,7 @@
       experience: 'Experience',
       works: [{
           period: '2020 - Now',
-          company: 'Mediacast',
+          company: 'MediacastTV',
           title: 'Middle Javascript Developer',
           desc: 'Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.'
         },
@@ -177,7 +177,7 @@
       },
       {
         name: "Ubuntu",
-        percents: "77"
+        percents: "79"
       }
       ],
       techTitle: 'Technologies',
