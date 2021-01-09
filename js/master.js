@@ -20,6 +20,8 @@
     return new Handlebars.SafeString(`<div class="skill-percentage" style="width: ${amount}% !important;"></div>`);
   })
 
+  // .
+  
   const en = {
     fullName: "Dmitrij Rudenko",
     profession: "Full Stack Developer",
