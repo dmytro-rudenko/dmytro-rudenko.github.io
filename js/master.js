@@ -20,22 +20,6 @@
     return new Handlebars.SafeString(`<div class="skill-percentage" style="width: ${amount}% !important;"></div>`);
   })
 
-  const flToken = '8c1a3053268c14272647341c032a4b103c02476a';
-
-  $.ajax({
-    url: "https://api.freelancehunt.com/v2/freelancers/dmitrijrudenko/reviews",
-    method: "GET",
-    headers: {
-      "Authorization": `Bearer ${flToken}`
-    },
-    failed: function (err) {
-      console.log(err);
-    },
-    success: function (res) {
-      console.log(res);
-    }
-  })
-
   const en = {
     fullName: "Dmitrij Rudenko",
     profession: "Full Stack Developer",
