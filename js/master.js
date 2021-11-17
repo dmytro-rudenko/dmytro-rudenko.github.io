@@ -21,7 +21,7 @@
   })
 
   // .
-  
+
   const en = {
     fullName: "Dmitrij Rudenko",
     profession: "Full Stack Developer",
@@ -52,14 +52,11 @@
     ],
     about: {
       title: 'About <span>me</span>',
-      information: `I am a full stack developer. I have been programming for the last 5 years.
-      Over the years of practice, I managed to work with various programming languages and technologies.
-      I have big experience in developing sites using CMS Wordpress and writing full-fledged web applications in node.js.
-      Always open to new interesting projects.
+      information: `I am a full-stack developer. I have been programming for the last 6 years. Over the years of practice, I managed to work with various programming languages and technologies. I have big experience in developing sites, writing full-fledged web applications and services in node.js. Always open to new interesting projects.
       `,
       fields: [{
         key: 'Age',
-        value: '25'
+        value: '26'
       },
       {
         key: 'Country',
@@ -128,15 +125,21 @@
       experience: 'Experience',
       works: [
         {
+          period: '2021 - 2021',
+          company: 'Enjoy Logic',
+          title: 'Javascript Developer',
+          desc: ''
+        },
+        {
           period: '2020 - 2021',
           company: 'FoxprimeTV',
           title: 'Chief Technology Officer',
           desc: ''
         },
         {
-          period: '2020 - 2020',
+          period: '2020 - 2021',
           company: 'MediacastTV',
-          title: 'Middle Javascript Developer',
+          title: 'Javascript Developer',
           desc: ''
         },
         {
@@ -157,7 +160,7 @@
         name: 'HTML/CSS/SCSS',
         percents: '100'
       }, {
-        name: 'Javascript/ES6',
+        name: 'Javascript/ES6/Vue',
         percents: '90'
       },
       {
@@ -165,34 +168,37 @@
         percents: '90'
       },
       {
-        name: 'Wordpress/PHP',
+        name: 'TypeScript/NestJS/HapiJS',
         percents: '85'
       },
       {
-        name: "Ubuntu",
+        name: "Ubuntu/Bash",
         percents: "79"
       }
       ],
       techTitle: 'Technologies',
       technologies: [
         'Express.js',
-        'Vue.js',
-        'WooCommerce',
+        'Nuxt.js',
+        'HapiJS',
+        'VueJS 2/3', ,
         'Mongoose',
-        'Webpack',
         'SSH',
         'Git',
         'Bash',
         'Bulma',
         'Bootstrap',
-        'Nuxt.js'
+        'Vuetify',
+        'Prisma',
+        'Sequelize',
+        'JWT'
       ]
     },
     contacts: {
       title: 'Contacts',
       email: 'E-mail',
       telegram: 'telegram',
-      my_freelancehunt_page: 'I am on freelancehunt'
+      my_freelancehunt_page: 'I am on freelancehunt',
     }
   };
 
