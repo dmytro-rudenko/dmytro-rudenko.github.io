@@ -24,7 +24,7 @@
 
   const en = {
     fullName: "Dmitrij Rudenko",
-    profession: "Full Stack Developer",
+    profession: "Full-Stack Developer",
     menu: {
       home: "Home",
       about: "About me",
