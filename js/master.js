@@ -24,7 +24,7 @@
 
   const en = {
     fullName: "Dmitrij Rudenko",
-    profession: "Full-Stack Developer",
+    profession: "Javascript Developer",
     menu: {
       home: "Home",
       about: "About me",
@@ -47,8 +47,8 @@
     currentYear: new Date().getFullYear(),
     copyright: "All rights reserved",
     mainSkills: [
-      'Frontend/Backend Development',
-      'UX/UI Design'
+      'Backend Development',
+      'Frontend Development',
     ],
     about: {
       title: 'About <span>me</span>',
@@ -125,6 +125,12 @@
       experience: 'Experience',
       works: [
         {
+          period: '2021 - 2022',
+          company: 'YugContract',
+          title: 'Javascript Developer',
+          desc: ''
+        },
+        {
           period: '2021 - 2021',
           company: 'Enjoy Logic',
           title: 'Javascript Developer',
@@ -157,9 +163,6 @@
       ],
       skillsTitle: 'Coding <span>Skills</span>',
       skills: [{
-        name: 'HTML/CSS/SCSS',
-        percents: '100'
-      }, {
         name: 'Javascript/ES6/Vue',
         percents: '90'
       },
