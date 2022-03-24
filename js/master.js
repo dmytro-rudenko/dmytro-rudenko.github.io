@@ -164,19 +164,19 @@
       skillsTitle: 'Coding <span>Skills</span>',
       skills: [{
         name: 'Javascript/ES6/Vue',
-        percents: '90'
+        percents: '99'
       },
       {
         name: 'Node.js/Express/MongoDB',
-        percents: '90'
+        percents: '99'
       },
       {
-        name: 'TypeScript/NestJS/HapiJS',
-        percents: '85'
+        name: 'TypeScript/NestJS/PostgreSQL',
+        percents: '95'
       },
       {
         name: "Ubuntu/Bash",
-        percents: "79"
+        percents: "85"
       }
       ],
       techTitle: 'Technologies',
@@ -184,7 +184,9 @@
         'Express.js',
         'Nuxt.js',
         'HapiJS',
-        'VueJS 2/3', ,
+        'VueJS 2/3',
+        'NestJS',
+        'PostgreSQL, MySQL',
         'Mongoose',
         'SSH',
         'Git',
