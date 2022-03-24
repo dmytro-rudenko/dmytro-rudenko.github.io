@@ -23,7 +23,7 @@
   // .
 
   const en = {
-    fullName: "Dmitrij Rudenko",
+    fullName: "Dmytro Rudenko",
     profession: "Javascript Developer",
     menu: {
       home: "Home",
@@ -36,7 +36,7 @@
       linkedin: "https://www.linkedin.com/in/dmitry--rudenko/",
       telegram: "https://t.me/frog_ocean",
       freelancehunt: "https://freelancehunt.com/freelancer/dmitrijrudenko.html?r=mjXZO",
-      github: "https://github.com/dmitrij-rudenko",
+      github: "https://github.com/dmytro-rudenko",
     },
     socialIcons: {
       linkedin: `<i class="fab fa-linkedin-in"></i>`,
