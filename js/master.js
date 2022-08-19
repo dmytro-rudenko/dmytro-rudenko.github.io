@@ -125,15 +125,21 @@
       experience: 'Experience',
       works: [
         {
+          period: '2022 - Now',
+          company: 'Firefog Games',
+          title: 'Node.js Backend Developer',
+          desc: ''
+        },
+        {
           period: '2021 - 2022',
           company: 'YugContract',
-          title: 'Javascript Developer',
+          title: 'Node.js Backend Developer',
           desc: ''
         },
         {
           period: '2021 - 2021',
           company: 'Enjoy Logic',
-          title: 'Javascript Developer',
+          title: 'FullStack Developer',
           desc: ''
         },
         {
@@ -145,7 +151,7 @@
         {
           period: '2020 - 2021',
           company: 'MediacastTV',
-          title: 'Javascript Developer',
+          title: 'Node.js Backend Developer',
           desc: ''
         },
         {
