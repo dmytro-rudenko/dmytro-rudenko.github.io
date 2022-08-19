@@ -52,11 +52,11 @@
     ],
     about: {
       title: 'About <span>me</span>',
-      information: `I am a full-stack developer. I have been programming for the last 6 years. Over the years of practice, I managed to work with various programming languages and technologies. I have big experience in developing sites, writing full-fledged web applications and services in node.js. Always open to new interesting projects.
+      information: `I am a full-stack developer. I have been programming for the last 7 years. Over the years of practice, I managed to work with various programming languages and technologies. I have big experience in developing sites, writing full-fledged web applications and services in node.js. Always open to new interesting projects.
       `,
       fields: [{
         key: 'Age',
-        value: '26'
+        value: '27'
       },
       {
         key: 'Country',
