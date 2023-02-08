@@ -125,7 +125,7 @@
       experience: 'Experience',
       works: [
         {
-          period: '2022 - Now',
+          period: '2022 - 2023',
           company: 'Firefog Games',
           title: 'Node.js Backend Developer',
           desc: ''
