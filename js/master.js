@@ -117,7 +117,7 @@
         {
           period: "2021 - 2021",
           company: "Enjoy Logic",
-          title: "FullStack Developer",
+          title: "Full Stack Developer",
           desc: "",
         },
         {
