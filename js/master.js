@@ -126,6 +126,12 @@
       works: [
         {
           period: '2022 - 2023',
+          company: 'Codeblessed',
+          title: 'Full stack Developer',
+          desc: ''
+        },
+        {
+          period: '2022 - 2023',
           company: 'Firefog Games',
           title: 'Node.js Backend Developer',
           desc: ''
@@ -212,6 +218,8 @@
       my_freelancehunt_page: 'I am on freelancehunt',
     }
   };
+
+  const ua = {}
 
   // Я фуллстек разработчик. Занимаюсь программированием последние 5 лет.
   //     За годы практики успел поработать с различными языками программирования и технологиями.
