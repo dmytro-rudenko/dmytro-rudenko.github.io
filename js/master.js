@@ -98,7 +98,7 @@
       works: [
         {
           period: "2022 - 2023",
-          company: "Codeblessed",
+          company: "Code Blessed",
           title: "Full stack Developer",
           desc: "",
         },
