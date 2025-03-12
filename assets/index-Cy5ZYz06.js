@@ -116,7 +116,7 @@
   ${ov}
 </div>
   🛠️ Main Skills: 
-  <ul>
+  <ul class="main-scills">
     ${rv}
   </ul>`,contacts:`<table border="1" cellspacing="0" cellpadding="8">
       <tr>
@@ -126,7 +126,7 @@
       ${iv}
   </table>,`,commands:`Available commands:
 
-  <ul>
+  <ul class="available-commands">
     <label>Portfolio</label>
     ${sv}
     <label>Commands</label>
